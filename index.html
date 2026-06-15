@@ -42,30 +42,48 @@ body{
     min-height:85vh;
     display:flex;
     align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:60px 0;
+    padding:80px 0;
 }
 
-.hero h1{
+.hero-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+}
+
+.hero-image{
+    flex:0 0 380px;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:12px;
+    display:block;
+}
+
+.hero-text{
+    flex:1;
+    text-align:left;
+}
+
+.hero-text h1{
     font-size:4rem;
     font-weight:300;
     letter-spacing:3px;
     margin-bottom:20px;
 }
 
-.hero h2{
+.hero-text h2{
     font-size:1.2rem;
     color:var(--grey);
     font-weight:400;
     margin-bottom:25px;
 }
 
-.hero p{
-    max-width:850px;
-    margin:auto;
+.hero-text p{
     color:var(--grey);
-    font-size:1rem;
+    max-width:700px;
 }
 
 .line{
@@ -279,8 +297,27 @@ body{
 
 @media(max-width:768px){
 
-.hero h1{
+.hero-content{
+    flex-direction:column;
+    text-align:center;
+    gap:40px;
+}
+
+.hero-image{
+    flex:none;
+    width:260px;
+}
+
+.hero-text{
+    text-align:center;
+}
+
+.hero-text h1{
     font-size:2.6rem;
+}
+
+.line{
+    margin:30px auto;
 }
 
 .section-title h2{
@@ -297,6 +334,14 @@ body{
 
 <div class="container">
 
+<div class="hero-content">
+
+<div class="hero-image">
+    <img src="images/Dr. Saadiya Naeemi PT White Background Headshot.jpg" alt="Dr. Saadiya Naeemi">
+</div>
+
+<div class="hero-text">
+
 <h1>DR. SAADIYA NAEEMI</h1>
 
 <h2>
@@ -311,6 +356,10 @@ executive positioning, public relations, sponsorship activations,
 digital transformation, e-commerce performance and stakeholder engagement
 across finance, healthcare, telecommunications, hospitality and consumer sectors.
 </p>
+
+</div>
+
+</div>
 
 </div>
 
