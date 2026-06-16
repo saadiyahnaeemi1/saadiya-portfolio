@@ -70,13 +70,38 @@ body{
 }
 
 .hero-text h1{
-    font-size:2.8rem;
-    line-height:1.2;
+    font-size:3rem;
+    line-height:1.3;
     font-weight:300;
     letter-spacing:1px;
-    margin-bottom:25px;
+    margin-bottom:30px;
+}
+.hero-name{
+    font-size:1.1rem;
+    letter-spacing:1px;
+    color:var(--grey);
+    margin-bottom:15px;
 }
 
+.accent{
+    position:relative;
+    display:inline-block;
+}
+
+.accent::after{
+    content:'';
+    position:absolute;
+    left:-4px;
+    right:-4px;
+    bottom:8px;
+    height:12px;
+    background:rgba(200,162,74,0.25);
+    z-index:-1;
+}
+.hero-gap{
+    display:block;
+    height:18px;
+}    
 .hero-text h2{
     font-size:1.2rem;
     color:var(--grey);
@@ -93,7 +118,7 @@ body{
     width:120px;
     height:2px;
     background:var(--gold);
-    margin:30px auto;
+    margin:0 0 25px 0;
 }
 
 .metrics{
@@ -345,19 +370,22 @@ body{
 
 <div class="hero-text">
 
-<h1>Building brands is easy.
-
-Delivering business outcomes is what matters.</h1>
-
-<h2>
-DR. SAADIYA NAEEMI
-</h2>
+<h1>
+Building <span class="accent">brands</span> is easy.
+<br>
+<span class="hero-gap"></span>
+Delivering business <span class="accent">outcomes</span> is what matters.
+</h1>
 
 <div class="line"></div>
 
-<p>
-Head of Marketing | Brand Growth | PR | Corporate Communications
+<p class="hero-name">
+DR. SAADIYA NAEEMI
 </p>
+
+<h2>
+Head of Marketing | Brand Growth | PR | Corporate Communications
+</h2>
 
 </div>
 
@@ -561,12 +589,9 @@ View Case Study
 <h2>Professional Profile</h2>
 
 <p>
-Experienced marketing and communications leader specializing in
-brand development, public relations, executive profiling,
-corporate communications, sponsorship strategy, digital marketing,
-lead generation and business growth. Proven track record of
-delivering measurable commercial outcomes while strengthening
-organizational visibility and stakeholder trust.
+Commercially focused marketing leader with a track record of driving growth, strengthening market position and elevating brand value through integrated marketing, communications and digital transformation initiatives. Expertise spans demand generation, executive positioning, product commercialization, corporate reputation and customer acquisition, supported by a balance of strategic leadership and operational execution.
+<br><br>
+A Doctor of Physical Therapy (DPT) by qualification and marketer by profession, combining analytical rigor with commercial acumen and extensive experience leading teams, agencies and cross-functional stakeholders in pursuit of sustainable business growth.
 </p>
 
 </div>
