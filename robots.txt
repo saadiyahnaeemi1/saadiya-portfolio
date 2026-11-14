@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saadiyahnaeemi1.github.io/saadiya-portfolio/sitemap.xml
